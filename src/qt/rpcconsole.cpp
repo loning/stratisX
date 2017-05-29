@@ -4,8 +4,13 @@
 #include "clientmodel.h"
 #include "guiutil.h"
 
+#ifndef Q_MOC_RUN
+
 #include "rpcserver.h"
 #include "rpcclient.h"
+#endif
+
+
 
 #include <QTime>
 #include <QThread>

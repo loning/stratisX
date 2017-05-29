@@ -7,17 +7,19 @@
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=llvm-g++
-DEPSDIR=/opt/local
+DEPSDIR=/usr/local
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)"/obj \
  -I"$(DEPSDIR)/include" \
- -I"$(DEPSDIR)/include/db48"
+ -I"$(DEPSDIR)/include/db48"\
+ -I"$(DEPSDIR)/Cellar/openssl/1.0.2l/include"
 
 LIBPATHS= \
  -L"$(DEPSDIR)/lib" \
- -L"$(DEPSDIR)/lib/db48"
+ -L"$(DEPSDIR)/lib/db48"\
+ -L"$(DEPSDIR)/Cellar/openssl/1.0.2l/lib"
 
 USE_UPNP:=1
 USE_WALLET:=1
@@ -94,9 +96,21 @@ OBJS= \
     obj/pbkdf2.o \
     obj/kernel.o \
     obj/scrypt.o \
-    obj/scrypt-x86.o \
-    obj/scrypt-x86_64.o \
-    obj/chainparams.o
+    obj/chainparams.o\
+    obj/x13hash/cubehash.o \
+    obj/x13hash/luffa.o \
+    obj/x13hash/aes_helper.o \
+    obj/x13hash/echo.o \
+    obj/x13hash/shavite.o \
+    obj/x13hash/simd.o \
+    obj/x13hash/blake.o\
+    obj/x13hash/bmw.o\
+    obj/x13hash/groestl.o\
+    obj/x13hash/jh.o\
+    obj/x13hash/keccak.o\
+    obj/x13hash/skein.o\
+    obj/x13hash/hamsi.o\
+	obj/x13hash/fugue.o
 
 ifeq (${USE_WALLET}, 1)
     DEFS += -DENABLE_WALLET
