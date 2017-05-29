@@ -25,6 +25,9 @@ using namespace boost;
 # error "Stratis cannot be compiled without assertions."
 #endif
 
+
+static const int64_t GLOBAL_MONEY = 987654321;
+
 //
 // Global state
 //
@@ -43,7 +46,7 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 
 int nStakeMinConfirmations = 50;
-unsigned int nStakeMinAge = 60; // 8 hours
+unsigned int nStakeMinAge = 60 ; // 1 min
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 50;
@@ -996,14 +999,15 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	int64_t PreMine = 98000000 * COIN;
-    if(pindexBest->nHeight == 1){return PreMine;} else {return 4*COIN;}
+	int64_t preMine = GLOBAL_MONEY * COIN / Params().LastPOWBlock();
+    return preMine;
+    //if(pindexBest->nHeight == 1){return PreMine;} else {return 4*COIN;}
 }
 
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-    return (1 * COIN) + nFees;
+    return nFees;
 }
 
 static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
@@ -1018,6 +1022,8 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
+    if(!fProofOfStake)
+        return Params().ProofOfWorkLimit().GetCompact();
     CBigNum bnTargetLimit = fProofOfStake ? GetProofOfStakeLimit(pindexLast->nHeight) : Params().ProofOfWorkLimit();
 
     if (pindexLast == NULL)
@@ -1957,7 +1963,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         return DoS(50, error("CheckBlock() : proof of work failed"));
 
     // Check timestamp
-    if (GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
+    if ( GetBlockTime() > FutureDriftV2(GetAdjustedTime()))
         return error("CheckBlock() : block timestamp too far in the future");
 
     // First transaction must be coinbase, the rest must not be
@@ -2050,6 +2056,10 @@ bool CBlock::AcceptBlock()
 
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+    
+    if (IsProofOfStake() && nHeight <= Params().LastPOWBlock())
+        return DoS(100, error("AcceptBlock() : reject proof-of-stake at height %d", nHeight));
+
 
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))

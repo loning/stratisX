@@ -342,6 +342,13 @@ bool AppInit2(boost::thread_group& threadGroup)
         return InitError("Invalid combination of -testnet and -regtest.");
     }
 
+    if (mapArgs.count("-gen")) {
+        // when specifying an explicit binding address, you want to listen on it
+        // even when -connect or -proxy is specified
+        if (SoftSetBoolArg("-gen", true))
+            LogPrintf("AppInit2 : parameter interaction: -gen");
+    }
+
     if (mapArgs.count("-bind")) {
         // when specifying an explicit binding address, you want to listen on it
         // even when -connect or -proxy is specified
