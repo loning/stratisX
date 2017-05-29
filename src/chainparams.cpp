@@ -111,13 +111,15 @@ public:
 
         assert(hashGenesisBlock == uint256("0x0002c75e4179fd8dc22391536af7e647bdd88b83d9ed57fcf09e5ae3d06cae78"));
         assert(genesis.hashMerkleRoot == uint256("0xede8b633f962178aa01949f51bf8e83ebb954dd89325af23ee9ff9453d4bce2e"));
+        
+        //MAIN_DNS_AREA
 
-        vSeeds.push_back(CDNSSeedData("stratisplatform.com", "seed.stratisplatform.com"));
-        vSeeds.push_back(CDNSSeedData("cloudstratis.com", "seed.cloudstratis.com"));
+        //vSeeds.push_back(CDNSSeedData("stratisplatform.com", "seed.stratisplatform.com"));
+        //vSeeds.push_back(CDNSSeedData("cloudstratis.com", "seed.cloudstratis.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 125);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, (63+128));
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, /*PUBKEY_ADDRESS*/ 63);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, /*SCRIPT_ADDRESS*/ 125);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, (/*PUBKEY_ADDRESS*/ 63+/*SCRIPT_ADDRESS*/ 125));
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xC2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0xDD).convert_to_container<std::vector<unsigned char> >();
 

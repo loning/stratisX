@@ -1007,7 +1007,9 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-    return nFees;
+
+    
+    return GLOBAL_MONEY * COIN_YEAR_REWARD / 365 / 24/60/60 * GetTargetSpacing(pindexPrev->nHeight); + nFees;
 }
 
 static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
