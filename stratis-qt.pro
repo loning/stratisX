@@ -8,6 +8,24 @@ DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
 
+
+
+
+windows:BOOST_INCLUDE_PATH=c:/deps/boost_1_55_0
+windows:BOOST_LIB_PATH=c:/deps/boost_1_55_0/stage/lib
+windows:BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
+windows:BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
+windows:OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1g/include
+windows:OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1g
+
+windows:BOOST_LIB_SUFFIX = -mgw48-mt-s-1_55
+
+windows:MINIUPNPC_INCLUDE_PATH=c:/deps/miniupnpc-1.9
+windows:MINIUPNPC_LIB_PATH=c:/deps/miniupnpc-1.9
+
+windows:QRENCODE_INCLUDE_PATH=c:/deps/qrencode-3.4.4
+windows:QRENCODE_LIB_PATH=c:/deps/qrencode-3.4.4/.libs
+
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT += widgets
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
