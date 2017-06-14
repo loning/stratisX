@@ -71,13 +71,13 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0x71;
-        pchMessageStart[1] = 0x31;
-        pchMessageStart[2] = 0x21;
-        pchMessageStart[3] = 0x01;
+        pchMessageStart[0] =/*pch maigc 0*/ 0x71;
+        pchMessageStart[1] =/*pch maigc 1*/ 0x31;
+        pchMessageStart[2] =/*pch maigc 2*/ 0x21;
+        pchMessageStart[3] =/*pch maigc 3*/ 0x01;
         vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
-        nDefaultPort = 16178;
-        nRPCPort = 16174;
+        nDefaultPort = /*port*/ 16178;
+        nRPCPort = /*rpc port*/ 16174;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 12);
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
