@@ -999,15 +999,13 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-	int64_t preMine = GLOBAL_MONEY * COIN / Params().LastPOWBlock();
-    return preMine;
-    //if(pindexBest->nHeight == 1){return PreMine;} else {return 4*COIN;}
+    if(pindexBest->nHeight == 1){return GLOBAL_MONEY*COIN;} else {return nFees;}
 }
 
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-    return GLOBAL_MONEY * COIN_YEAR_REWARD / 365 / 24/60/60 * GetTargetSpacing(pindexPrev->nHeight) + nFees;
+    return COIN + nFees;
 }
 
 static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
@@ -1022,8 +1020,6 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    if(!fProofOfStake)
-        return Params().ProofOfWorkLimit().GetCompact();
     CBigNum bnTargetLimit = fProofOfStake ? GetProofOfStakeLimit(pindexLast->nHeight) : Params().ProofOfWorkLimit();
 
     if (pindexLast == NULL)
@@ -2056,10 +2052,6 @@ bool CBlock::AcceptBlock()
 
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
-    
-    if (IsProofOfStake() && nHeight <= Params().LastPOWBlock())
-        return DoS(100, error("AcceptBlock() : reject proof-of-stake at height %d", nHeight));
-
 
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
