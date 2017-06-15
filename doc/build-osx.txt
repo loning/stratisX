@@ -53,5 +53,5 @@ Run
 Run
   ./stratisd help # When the daemon is running, to get a list of RPC commands
 
-
-sudo macdeployqt XXX-Qt.app
+brew install qt@4
+sudo /usr/local/opt/qt@4/bin/macdeployqt HShare-Qt.app
