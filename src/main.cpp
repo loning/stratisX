@@ -22,11 +22,11 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Stratis cannot be compiled without assertions."
+# error "HPXT cannot be compiled without assertions."
 #endif
 
 
-static const int64_t GLOBAL_MONEY = /*GLOBAL_MONEY*/ 987654321;
+static const int64_t GLOBAL_MONEY = /*GLOBAL_MONEY*/ 100000000000;
 
 //
 // Global state
@@ -80,7 +80,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Stratis Signed Message:\n";
+const string strMessageMagic = "HPXT Signed Message:\n";
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -2651,7 +2651,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("stratis-loadblk");
+    RenameThread("hpxt-loadblk");
 
     CImportingNow imp;
 

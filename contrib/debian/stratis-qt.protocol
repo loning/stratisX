@@ -1,6 +1,6 @@
 [Protocol]
-exec=stratis-qt '%u'
-protocol=stratis
+exec=hpxt-qt '%u'
+protocol=hpxt
 input=none
 output=none
 helper=true

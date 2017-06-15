@@ -16,7 +16,7 @@ base=icon_${sizes[$i]}x${sizes[$i]}
 
 cp $iconset/$base@2x.png $iconset/$base.png
 
-sips —resampleHeightWidth ${sizes[$i]} ${sizes[$i]} $iconset/$base.png &>/dev/null
+sips --resampleHeightWidth ${sizes[$i]} ${sizes[$i]} $iconset/$base.png &>/dev/null
 
 cp $iconset/$base.png $iconset/icon_${sizes[$i+1]}x${sizes[$i+1]}@2x.png
 
