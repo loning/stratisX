@@ -26,7 +26,7 @@ using namespace boost;
 #endif
 
 
-static const int64_t GLOBAL_MONEY = /*GLOBAL_MONEY*/ 100000000000;
+static const int64_t GLOBAL_MONEY = /*GLOBAL_MONEY*/ 1000000000;
 
 //
 // Global state
