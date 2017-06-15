@@ -78,7 +78,7 @@ Dependency Build Instructions: Gentoo
 emerge -av1 --noreplace boost openssl sys-libs/db
 
 Take the following steps to build (no UPnP support):
- cd ${LJCIS_DIR}/src
+ cd ${HPXTIS_DIR}/src
  make -f makefile.unix USE_UPNP=
  strip hpxtd
 
