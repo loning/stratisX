@@ -999,7 +999,7 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    if(pindexBest->nHeight < nStakeMinConfirmations){return GLOBAL_MONEY*COIN/nStakeMinConfirmations +nFees;} else {return nFees;}
+    if(pindexBest->nHeight < nStakeMinConfirmations){return GLOBAL_MONEY/nStakeMinConfirmations*COIN +nFees;} else {return nFees;}
 }
 
 // miner's coin stake reward
