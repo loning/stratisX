@@ -71,13 +71,13 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] =/*pch maigc 0*/ 0x71;
-        pchMessageStart[1] =/*pch maigc 1*/ 0x31;
-        pchMessageStart[2] =/*pch maigc 2*/ 0x21;
-        pchMessageStart[3] =/*pch maigc 3*/ 0x01;
+        pchMessageStart[0] =0x26;
+        pchMessageStart[1] =0x26;
+        pchMessageStart[2] =0x20;
+        pchMessageStart[3] =0x20;
         vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
-        nDefaultPort = /*port*/ 16178;
-        nRPCPort = /*rpc port*/ 16174;
+        nDefaultPort = 11616;
+        nRPCPort = 11617;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 12);
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -112,20 +112,20 @@ public:
         assert(hashGenesisBlock == uint256("0x0002c75e4179fd8dc22391536af7e647bdd88b83d9ed57fcf09e5ae3d06cae78"));
         assert(genesis.hashMerkleRoot == uint256("0xede8b633f962178aa01949f51bf8e83ebb954dd89325af23ee9ff9453d4bce2e"));
         
-        //MAIN_DNS_AREA
+        vSeeds.push_back(CDNSSeedData("dns1.dw.cash", "hshare-dns1.dw.cash"));vSeeds.push_back(CDNSSeedData("dns2.dw.cash", "hshare-dns2.dw.cash"));
 
-        //vSeeds.push_back(CDNSSeedData("stratisplatform.com", "seed.stratisplatform.com"));
-        //vSeeds.push_back(CDNSSeedData("cloudstratis.com", "seed.cloudstratis.com"));
+        //vSeeds.push_back(CDNSSeedData("wincoinplatform.com", "seed.wincoinplatform.com"));
+        //vSeeds.push_back(CDNSSeedData("cloudwincoin.com", "seed.cloudwincoin.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, /*PUBKEY_ADDRESS*/ 63);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, /*SCRIPT_ADDRESS*/ 125);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, (/*PUBKEY_ADDRESS*/ 63+/*SCRIPT_ADDRESS*/ 125));
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, (73+135));
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xC2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0xDD).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        nLastPOWBlock =  /*nLastPOWBlock*/ 1000;
+        nLastPOWBlock =  1000;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -173,9 +173,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("stratisplatform.com", "testnode1.stratisplatform.com"));
+        vSeeds.push_back(CDNSSeedData("wincoinplatform.com", "testnode1.wincoinplatform.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // stratis test net start with T
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // wincoin test net start with T
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
         base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 65 + 128);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();

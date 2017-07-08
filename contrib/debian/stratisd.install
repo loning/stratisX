@@ -1,2 +1,2 @@
-debian/bin/stratisd usr/bin
-src/stratisd usr/lib/stratis
+debian/bin/wincoind usr/bin
+src/wincoind usr/lib/wincoin

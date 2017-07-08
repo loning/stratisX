@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Stratis</source>
-        <translation>关于黑币</translation>
+        <source>About WinCoin</source>
+        <translation>关于WinCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Stratis&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;黑币客户端&lt;/b&gt; 版本</translation>
+        <source>&lt;b&gt;WinCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;WinCoin客户端&lt;/b&gt; 版本</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Stratis developers</source>
+Copyright © 2014 The WinCoin developers</source>
         <translation>版权所有 © 2009-2014 比特币Bitcoin开发组
 版权所有 © 2012-2014 新星币Novacoin开发组
-版权所有 © 2014 黑币Stratis开发组</translation>
+版权所有 © 2014 WinCoinWinCoin开发组</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Stratis addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>这是您用来接收支付的黑币地址列表。为不同的支付方建立不同的地址以便于了解支付来源。</translation>
+        <source>These are your WinCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>这是您用来接收支付的WinCoin地址列表。为不同的支付方建立不同的地址以便于了解支付来源。</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Stratis address</source>
-        <translation>对信息进行签名以证明您对该黑币地址的所有权</translation>
+        <source>Sign a message to prove you own a WinCoin address</source>
+        <translation>对信息进行签名以证明您对该WinCoin地址的所有权</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Stratis address</source>
-        <translation>验证信息以保证其经过指定黑币地址的签名</translation>
+        <source>Verify a message to ensure it was signed with a specified WinCoin address</source>
+        <translation>验证信息以保证其经过指定WinCoin地址的签名</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -232,7 +232,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>警告：如果您丢失了加密该钱包的密码，其中所有的黑币将会丢失！</translation>
+        <translation>警告：如果您丢失了加密该钱包的密码，其中所有的WinCoin将会丢失！</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -263,8 +263,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Stratis will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>黑币客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
+        <source>WinCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>WinCoin客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -357,8 +357,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Stratis</source>
-        <translation>显示关于黑币的信息</translation>
+        <source>Show information about WinCoin</source>
+        <translation>显示关于WinCoin的信息</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,12 +397,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Stratis address</source>
-        <translation>向指定的地址发送黑币</translation>
+        <source>Send coins to a WinCoin address</source>
+        <translation>向指定的地址发送WinCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Stratis</source>
+        <source>Modify configuration options for WinCoin</source>
         <translation>更改设置选项</translation>
     </message>
     <message>
@@ -443,8 +443,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>Stratis</source>
-        <translation>黑币</translation>
+        <source>WinCoin</source>
+        <translation>WinCoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -453,8 +453,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Stratis</source>
-        <translation>关于黑币(&amp;A)</translation>
+        <source>&amp;About WinCoin</source>
+        <translation>关于WinCoin(&amp;A)</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Stratis client</source>
-        <translation>黑币客户端</translation>
+        <source>WinCoin client</source>
+        <translation>WinCoin客户端</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Stratis network</source>
-        <translation><numerusform>与黑币网络建立了 %n 个连接</numerusform></translation>
+        <source>%n active connection(s) to WinCoin network</source>
+        <translation><numerusform>与WinCoin网络建立了 %n 个连接</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -536,7 +536,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+2"/>
         <source>Not staking because you don&apos;t have mature coins</source>
-        <translation>未进行权益增值，因为钱包中没有成熟的黑币</translation>
+        <translation>未进行权益增值，因为钱包中没有成熟的WinCoin</translation>
     </message>
     <message>
         <location line="-812"/>
@@ -546,12 +546,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+6"/>
         <source>&amp;Receive</source>
-        <translation>接收黑币(&amp;R)</translation>
+        <translation>接收WinCoin(&amp;R)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Send</source>
-        <translation>发送黑币(&amp;S)</translation>
+        <translation>发送WinCoin(&amp;S)</translation>
     </message>
     <message>
         <location line="+49"/>
@@ -605,8 +605,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Stratis address or malformed URI parameters.</source>
-        <translation>无法解析URI：无效的黑币地址或错误的URI参数。</translation>
+        <source>URI can not be parsed! This can be caused by an invalid WinCoin address or malformed URI parameters.</source>
+        <translation>无法解析URI：无效的WinCoin地址或错误的URI参数。</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -728,8 +728,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Stratis can no longer continue safely and will quit.</source>
-        <translation>发生严重错误，黑币客户端即将关闭。</translation>
+        <source>A fatal error occurred. WinCoin can no longer continue safely and will quit.</source>
+        <translation>发生严重错误，WinCoin客户端即将关闭。</translation>
     </message>
 </context>
 <context>
@@ -745,7 +745,7 @@ Address: %4
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
         <source>Coin Control</source>
-        <translation>黑币控制</translation>
+        <translation>WinCoin控制</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1055,8 +1055,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Stratis address.</source>
-        <translation>“%1” 不是有效的黑币地址。</translation>
+        <source>The entered address &quot;%1&quot; is not a valid WinCoin address.</source>
+        <translation>“%1” 不是有效的WinCoin地址。</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1074,8 +1074,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Stratis-Qt</source>
-        <translation>黑币客户端Stratis-Qt</translation>
+        <source>WinCoin-Qt</source>
+        <translation>WinCoin客户端WinCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1147,13 +1147,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Stratis after logging in to the system.</source>
-        <translation>开机自动启动黑币客户端</translation>
+        <source>Automatically start WinCoin after logging in to the system.</source>
+        <translation>开机自动启动WinCoin客户端</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Stratis on system login</source>
-        <translation>开机时自动启动黑币客户端(&amp;S)</translation>
+        <source>&amp;Start WinCoin on system login</source>
+        <translation>开机时自动启动WinCoin客户端(&amp;S)</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1162,8 +1162,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Stratis client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>路由器自动打开黑币客户端端口。该功能仅在路由器开启UPnP支持时有效。</translation>
+        <source>Automatically open the WinCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>路由器自动打开WinCoin客户端端口。该功能仅在路由器开启UPnP支持时有效。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1192,7 +1192,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the Stratis network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the WinCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1237,18 +1237,18 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stratis.</source>
-        <translation>在此设置用户界面语言。重启黑币客户端后设置生效。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WinCoin.</source>
+        <translation>在此设置用户界面语言。重启WinCoin客户端后设置生效。</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>黑币金额单位(&amp;U)：</translation>
+        <translation>WinCoin金额单位(&amp;U)：</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择黑币单位。</translation>
+        <translation>选择WinCoin单位。</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1258,12 +1258,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+3"/>
         <source>Display coin &amp;control features (experts only!)</source>
-        <translation>显示黑币控制选项(仅用于专家用户)</translation>
+        <translation>显示WinCoin控制选项(仅用于专家用户)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Whether to select the coin outputs randomly or with minimal coin age.</source>
-        <translation>使用最小币龄或者随机来选择黑币的输出</translation>
+        <translation>使用最小币龄或者随机来选择WinCoin的输出</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1304,7 +1304,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Stratis.</source>
+        <source>This setting will take effect after restarting WinCoin.</source>
         <translation>重启客户端后设置生效</translation>
     </message>
     <message>
@@ -1323,7 +1323,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stratis network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WinCoin network after a connection is established, but this process has not completed yet.</source>
         <translation>所显示的信息尚未更新，建立连接后钱包客户端会自动和网络进行同步，但目前该过程尚未完成。</translation>
     </message>
     <message>
@@ -1359,7 +1359,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+13"/>
         <source>Mined balance that has not yet matured</source>
-        <translation>尚未成熟的挖矿收入余额</translation>
+        <translation>尚未成熟的共识收入余额</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -1397,8 +1397,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start stratis: click-to-pay handler</source>
-        <translation>无法启动黑币: 点击支付处理器</translation>
+        <source>Cannot start wincoin: click-to-pay handler</source>
+        <translation>无法启动WinCoin: 点击支付处理器</translation>
     </message>
 </context>
 <context>
@@ -1565,7 +1565,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Stratis-Qt help message to get a list with possible Stratis command-line options.</source>
+        <source>Show the WinCoin-Qt help message to get a list with possible WinCoin command-line options.</source>
         <translation>显示关于命令行选项的帮助信息。</translation>
     </message>
     <message>
@@ -1585,13 +1585,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>Stratis - Debug window</source>
-        <translation>黑币客户端-调试窗口</translation>
+        <source>WinCoin - Debug window</source>
+        <translation>WinCoin客户端-调试窗口</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Stratis Core</source>
-        <translation>黑币核心进程</translation>
+        <source>WinCoin Core</source>
+        <translation>WinCoin核心进程</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1600,7 +1600,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Stratis debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the WinCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>打开调试日志文件，对于较大的文件，这可能持续几秒钟。</translation>
     </message>
     <message>
@@ -1610,8 +1610,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Stratis RPC console.</source>
-        <translation>欢迎使用黑币RPC控制台。</translation>
+        <source>Welcome to the WinCoin RPC console.</source>
+        <translation>欢迎使用WinCoinRPC控制台。</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1791,8 +1791,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>输入黑币地址(例如：SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a WinCoin address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
+        <translation>输入WinCoin地址(例如：SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1891,8 +1891,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Stratis address</source>
-        <translation>警告：无效的黑币地址</translation>
+        <source>WARNING: Invalid WinCoin address</source>
+        <translation>警告：无效的WinCoin地址</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1965,8 +1965,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>输入一个黑币地址 (例：SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a WinCoin address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
+        <translation>输入一个WinCoin地址 (例：SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
     </message>
 </context>
 <context>
@@ -2026,8 +2026,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Stratis address</source>
-        <translation>对该消息进行签名以证明您对该黑币地址的所有权</translation>
+        <source>Sign the message to prove you own this WinCoin address</source>
+        <translation>对该消息进行签名以证明您对该WinCoin地址的所有权</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2054,12 +2054,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>用来签名该消息的黑币地址(例： SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <translation>用来签名该消息的WinCoin地址(例： SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Stratis address</source>
-        <translation>确认该消息以保证它经由指定的黑币地址签名</translation>
+        <source>Verify the message to ensure it was signed with the specified WinCoin address</source>
+        <translation>确认该消息以保证它经由指定的WinCoin地址签名</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2069,8 +2069,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Stratis address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
-        <translation>输入黑币地址(例： SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
+        <source>Enter a WinCoin address (e.g. SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</source>
+        <translation>输入WinCoin地址(例： SjBj1QvJvsAkU5EBKggdZ8gWc4oK2F5AMY)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2079,8 +2079,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Stratis signature</source>
-        <translation>输入黑币签名</translation>
+        <source>Enter WinCoin signature</source>
+        <translation>输入WinCoin签名</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2444,7 +2444,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+2"/>
         <source>Mined</source>
-        <translation>挖矿所得</translation>
+        <translation>共识所得</translation>
     </message>
     <message>
         <location line="+38"/>
@@ -2533,7 +2533,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+1"/>
         <source>Mined</source>
-        <translation>挖矿所得</translation>
+        <translation>共识所得</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2658,8 +2658,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>Stratis version</source>
-        <translation>黑币客户端 版本</translation>
+        <source>WinCoin version</source>
+        <translation>WinCoin客户端 版本</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2668,8 +2668,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or stratisd</source>
-        <translation>向-server服务器或stratisd发送命令</translation>
+        <source>Send command to -server or wincoind</source>
+        <translation>向-server服务器或wincoind发送命令</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2691,13 +2691,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: stratis.conf)</source>
-        <translation>指定配置文件(默认: stratis.conf)</translation>
+        <source>Specify configuration file (default: wincoin.conf)</source>
+        <translation>指定配置文件(默认: wincoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: stratisd.pid)</source>
-        <translation>指定pid文件(默认: stratisd.pid)</translation>
+        <source>Specify pid file (default: wincoind.pid)</source>
+        <translation>指定pid文件(默认: wincoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2715,24 +2715,24 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=stratisrpc
+rpcuser=wincoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;WinCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
 建议使用如下的随机密码:
-rpcuser=stratisrpc
+rpcuser=wincoinrpc
 rpcpassword=%s
 (不需要记住该密码)
 用户名和密码不能重复。
 如果该文件不存在，请自行创建并设为用户本身只读权限。
 建议创建提示以监测可能的问题，如：
-alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
+alertnotify=echo %%s | mail -s &quot;WinCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2841,8 +2841,8 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stratis will not work properly.</source>
-        <translation>警告：请确认您计算机的本地时间。如果时钟错误，黑币客户端将不能正常工作。</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WinCoin will not work properly.</source>
+        <translation>警告：请确认您计算机的本地时间。如果时钟错误，WinCoin客户端将不能正常工作。</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3140,8 +3140,8 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. Stratis is shutting down.</source>
-        <translation>初始化完整性检查失败。 黑币客户端即将关闭。</translation>
+        <source>Initialization sanity check failed. WinCoin is shutting down.</source>
+        <translation>初始化完整性检查失败。 WinCoin客户端即将关闭。</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3161,7 +3161,7 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>这是一个预发布测试版本 - 风险须自行承担 - 不适用于挖矿或商家应用</translation>
+        <translation>这是一个预发布测试版本 - 风险须自行承担 - 不适用于共识或商家应用</translation>
     </message>
     <message>
         <location line="-168"/>
@@ -3196,12 +3196,12 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Stratis</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of WinCoin</source>
         <translation>wallet.dat 钱包文件加载出错：需要新版本的客户端</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Stratis to complete</source>
+        <source>Wallet needed to be rewritten: restart WinCoin to complete</source>
         <translation>需要重写钱包，重启客户端以完成该操作。</translation>
     </message>
     <message>
@@ -3261,8 +3261,8 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. Stratis is probably already running.</source>
-        <translation>无法绑定到该计算机上的 %s. 黑币客户端可能已在运行中。</translation>
+        <source>Unable to bind to %s on this computer. WinCoin is probably already running.</source>
+        <translation>无法绑定到该计算机上的 %s. WinCoin客户端可能已在运行中。</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3296,8 +3296,8 @@ alertnotify=echo %%s | mail -s &quot;Stratis Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Stratis is probably already running.</source>
-        <translation>无法从数据目录 %s 获得锁定.  黑币客户端可能已在运行中.</translation>
+        <source>Cannot obtain a lock on data directory %s. WinCoin is probably already running.</source>
+        <translation>无法从数据目录 %s 获得锁定.  WinCoin客户端可能已在运行中.</translation>
     </message>
     <message>
         <location line="+4"/>

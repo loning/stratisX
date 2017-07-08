@@ -1,7 +1,7 @@
 src/*.exe
-src/stratis
-src/stratisd
-src/test_stratis
+src/wincoin
+src/wincoind
+src/test_wincoin
 src/build.h
 .*.swp
 *.*~*
@@ -10,11 +10,11 @@ src/build.h
 *.orig
 *.o
 *.patch
-.stratis
+.wincoin
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-stratis-qt
+wincoin-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

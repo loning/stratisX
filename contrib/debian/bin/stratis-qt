@@ -4,13 +4,13 @@ set -e
 
 umask 077
 
-basedir=~/.stratis
+basedir=~/.wincoin
 dbfile="$basedir/DB_CONFIG"
-cfgfile="$basedir/stratis.conf"
+cfgfile="$basedir/wincoin.conf"
 
 [ -e "$basedir" ] || mkdir "$basedir"
 
-# Stratis does not clean up DB log files by default
+# WinCoin does not clean up DB log files by default
 [ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
 
-exec /usr/lib/stratis/stratis-qt "$@"
+exec /usr/lib/wincoin/wincoin-qt "$@"

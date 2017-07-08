@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = stratis-qt
+TARGET = wincoin-qt
 VERSION = 2.0.0.2
 INCLUDEPATH += src src/json src/qt
 QT += network
@@ -456,7 +456,7 @@ macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhan
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/coin.icns
-macx:TARGET = "Stratis-Qt"
+macx:TARGET = "WinCoin-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread
